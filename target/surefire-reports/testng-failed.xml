@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="10" name="Chrome Test(failed)" verbose="0">
+    <parameter name="reportName" value="purchaseReport"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.purchasingProcess">
+        <methods>
+          <include name="purchasingProcessBeforeMethod"/>
+          <include name="purchasingProcessBeforeClass"/>
+          <include name="case03_purchasingSameBookMultipleTimes"/>
+          <include name="afterTestConfigs"/>
+          <include name="case04_purchasingDifferentBooks"/>
+          <include name="case01_mainPageBookValidation"/>
+          <include name="purchasingProcessAfterMethod"/>
+          <include name="case05_purchasingDifferentBooks"/>
+          <include name="purchasingProcessAfterClass"/>
+          <include name="beforeTestConfigs"/>
+          <include name="case02_purchasingSingleBook"/>
+        </methods>
+      </class> <!-- testCases.purchasingProcess -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
